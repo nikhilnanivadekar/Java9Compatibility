@@ -12,7 +12,10 @@ public class ArrayListReflectionJava8
         System.out.println("Java version: " + System.getProperty("java.version"));
 
         ArrayList<Integer> arrayList = new ArrayList<>();
+
         Interval.fromTo(0, 5).each(arrayList::add);
+        System.out.println(arrayList);
+
         ArrayListAdapter.adapt(arrayList).forEachWithIndex((each, index) -> System.out.println(each + " at " + index));
     }
 }

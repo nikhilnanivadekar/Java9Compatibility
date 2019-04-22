@@ -11,5 +11,7 @@ public class CombinerNonNull
                 .map(Character::toUpperCase)
                 .collect(StringBuilder::new,
                         StringBuilder::appendCodePoint, null).toString());
+
+        System.out.println("Java version: " + System.getProperty("java.version"));
     }
 }
